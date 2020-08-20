@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\ZeroTier\One\;C:\Program Files (x86)\Calibre2\;D:\Programs\matlab\runtime\win64;D:\Programs\matlab\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\euphoria\AppData\Local\Microsoft\WindowsApps;C:\Program Files\mpv;D:\Programs\altera\14.0\modelsim_ase\win32aloem;C:\cmder;C:\cmder\bin;C:\Users\euphoria\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\euphoria\AppData\Roaming\npm;C:\Users\euphoria\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\Code\graphql-playground\server\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "chatApi",
+    "version": "0.0.1",
+    "devDependencies": {
+      "@types/express": "^4.17.2",
+      "@types/node": "^12.12.8",
+      "nodemon": "^1.19.4",
+      "ts-node": "8.5.2",
+      "typescript": "3.7.2"
+    },
+    "dependencies": {
+      "apollo-server-express": "^2.9.9",
+      "express": "^4.17.1",
+      "graphql": "^14.5.8",
+      "reflect-metadata": "^0.1.10",
+      "sqlite3": "^4.1.0",
+      "type-graphql": "^0.17.5",
+      "typeorm": "^0.2.20"
+    },
+    "scripts": {
+      "start": "nodemon --exec ts-node src/index.ts"
+    }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
