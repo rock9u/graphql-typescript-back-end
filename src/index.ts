@@ -4,6 +4,7 @@ import express from 'express'
 import { ApolloServer } from 'apollo-server-express'
 import { buildSchema } from 'type-graphql'
 import { ProjectResolver } from './resolvers/ProjectResolver'
+import { UserResolver } from './resolvers/UserResolver'
 ;(async () => {
   const app = express()
 
@@ -11,7 +12,7 @@ import { ProjectResolver } from './resolvers/ProjectResolver'
 
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
-      resolvers: [ProjectResolver],
+      resolvers: [ProjectResolver, UserResolver],
     }),
     context: ({ req, res }) => ({ req, res }),
   })
