@@ -7,7 +7,7 @@ import {
   InputType,
   Field,
 } from 'type-graphql'
-import { Project } from '../entity/Project'
+import { Project } from '../../entity/Project'
 
 @InputType()
 class ProjectInput {
