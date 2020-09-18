@@ -15,9 +15,6 @@ import { redis } from './redis'
   await createConnection()
   const schema = await buildSchema({
     resolvers: [ProjectResolver, UserResolver, LoginResolver, MeResolver],
-    authChecker: ({ context: { req } }) => {
-      return !!req.session.userId
-    },
   })
 
   const apolloServer = new ApolloServer({
