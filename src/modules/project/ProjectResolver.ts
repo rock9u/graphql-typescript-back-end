@@ -1,11 +1,11 @@
 import {
-  Resolver,
-  Mutation,
   Arg,
-  Int,
-  Query,
-  InputType,
   Field,
+  InputType,
+  Int,
+  Mutation,
+  Query,
+  Resolver,
 } from 'type-graphql'
 import { Project } from '../../entity/Project'
 
