@@ -11,6 +11,8 @@ import {
 import { User } from '../../entity/User'
 import { isAuth } from '../middleware/isAuth'
 import { logger } from '../middleware/logger'
+import { createConfirmationUrl } from '../utils/createConfirmationUrl'
+import { sendEmail } from '../utils/sendEmail'
 import { RegisterInput } from './register/RegisterInput'
 
 @Resolver(User)
@@ -39,6 +41,7 @@ export class UserResolver {
       password: hashedPassword,
     }).save()
 
+    await sendEmail(email, await createConfirmationUrl(user.id))
     return user
   }
 }
