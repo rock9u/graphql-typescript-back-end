@@ -23,7 +23,7 @@ import { redis } from './redis'
       },
     },
     schema,
-    context: ({ req }: any) => ({ req }),
+    context: ({ req, res }: any) => ({ req, res }),
   })
 
   const app = express()
