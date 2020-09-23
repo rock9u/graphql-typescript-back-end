@@ -9,10 +9,10 @@ import {
   UseMiddleware,
 } from 'type-graphql'
 import { User } from '../../entity/User'
+import { createConfirmationUrl } from '../../utils/createConfirmationUrl'
+import { sendEmail } from '../../utils/sendEmail'
 import { isAuth } from '../middleware/isAuth'
 import { logger } from '../middleware/logger'
-import { createConfirmationUrl } from '../utils/createConfirmationUrl'
-import { sendEmail } from '../utils/sendEmail'
 import { RegisterInput } from './register/RegisterInput'
 
 @Resolver(User)
